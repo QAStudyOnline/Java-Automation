@@ -29,7 +29,7 @@ public class CalculatorTestDataProvider {
     }
 
     @Parameterized.Parameters(name = "{index}: canDivideTwoNumbers({0}/{1})={2}")
-    public static Iterable<Object[]> data1() {
+    public static Iterable<Object[]> dataProviderForDivideMethodTests() {
         return Arrays.asList(
                 new Object[][]{{1, 1, 1}, {2, 2, 1}, {8, 2, 4}, {4, 5, 0}}
         );
