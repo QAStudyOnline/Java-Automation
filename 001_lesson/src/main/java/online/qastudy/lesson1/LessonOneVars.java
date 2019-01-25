@@ -35,7 +35,7 @@ public class LessonOneVars {
         long variableLong = 2;
         double variableDoubel = 2.5; // Класическая ошибка использовать double для работы с деньгами. Лучше брать класс BigDecimal
         float variableFloat = 2.5f;
-        boolean variableBoolean = true;
+        boolean variableBoolean = false;
         String variableString = "automation testing is awesome!";
 
         System.out.println("Byte var is: " + variableByte);
@@ -47,5 +47,6 @@ public class LessonOneVars {
         System.out.println("Float var is: " + variableFloat);
         System.out.println("Boolean var is: " + variableBoolean);
         System.out.println("String var is: " + variableString);
+
     }
 }

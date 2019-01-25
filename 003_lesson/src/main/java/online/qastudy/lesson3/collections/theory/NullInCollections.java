@@ -4,6 +4,7 @@ package online.qastudy.lesson3.collections.theory;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ThreadFactory;
 import java.util.stream.Stream;
 
 public class NullInCollections {
@@ -49,7 +50,7 @@ public class NullInCollections {
 
     private static void nullInMap() {
 
-        Map<Object,Object> objectMap = new HashMap<>();
+        Map<Object,Object> objectMap = new HashMap<Object, Object>();
         Object key2 = null;
         Object value2 = "I am value2 from HashMap";
 

@@ -3,7 +3,7 @@ package online.qastudy.lesson2;
 import java.util.Random;
 
 public class LessonTwoMethods {
-    public static final int AGE = 32; // создание констонт
+    public static final int AGE = 31; // создание констонт
 
     public static void printer(String forPrint) {
         System.out.println(forPrint);
@@ -23,10 +23,10 @@ public class LessonTwoMethods {
             }
         }
     }
-
-    private int[] getRandomArray() {
+        //  signature of the methods
+    private int[] getRandomArray(int lenght) {
         Random rn = new Random();
-        int[] result = new int[rn.nextInt(1000)];
+        int[] result = new int[lenght];
         for (int i = 0; i < result.length; i++) {
             result[i] = rn.nextInt();
         }
@@ -41,6 +41,6 @@ public class LessonTwoMethods {
         int[] array = {1, 2, 3, 4, 5, 6, 7};
         instance.printArray(array);
         System.out.print("\n");
-        instance.printArray(instance.getRandomArray());
+        instance.printArray(instance.getRandomArray(30));
     }
 }

@@ -3,7 +3,7 @@ package online.qastudy.lesson2.oop;
 public class Car {
     private String model;
     private String color;
-    private int transmissionNumber;
+    protected int transmissionNumber;
 
     public String getModel() {
         return model;

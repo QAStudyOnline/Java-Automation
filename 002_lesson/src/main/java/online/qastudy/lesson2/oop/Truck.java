@@ -10,10 +10,11 @@ public class Truck extends Car {
 
     }
 
-    Truck(String model, String color, double loadСapacity, int wheelsQuantity) {
-        super(model, color);
+    Truck(String mode, String color, double loadСapacity, int wheelsQuantity) {
+        super(mode, color);
         this.loadСapacity = loadСapacity;
         this.wheelsQuantity = wheelsQuantity;
+
     }
 
     public double getLoadСapacity() {
@@ -39,9 +40,9 @@ public class Truck extends Car {
                 .append("\n")
                 .append(" Color: ").append(getColor())
                 .append("\n")
-                .append(" Load Capacity: ").append(loadСapacity)
+                .append(" Load Capacity: ").append(this.loadСapacity)
                 .append("\n")
-                .append(" Wheels Quantity: ").append(wheelsQuantity)
+                .append(" Wheels Quantity: ").append(this.wheelsQuantity)
                 .append("\n");
 
         for (int i = 0; i < chassis().length; i++) {
