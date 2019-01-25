@@ -11,7 +11,7 @@ public class SeleniumWebDriverExample {
     public static final String SELENIUM = "https://www.seleniumhq.org/";
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "/home/ymaks/sources/IdeaProjects/PROG_KIEV_UA/automation-testing/004_lesson/src/test/resources/chromedriver");
+        System.setProperty("webdriver.chrome.driver", System.getenv("CHROMEDRIVER"));
         WebDriver driver = new ChromeDriver();
 
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
