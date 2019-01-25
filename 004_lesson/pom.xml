@@ -15,6 +15,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
+
+        <!-- JUnit for test run and assertion -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -22,12 +24,28 @@
             <scope>test</scope>
         </dependency>
 
+         <!-- TestNG style DataProvider for JUnit -->
         <dependency>
             <groupId>com.tngtech.java</groupId>
             <artifactId>junit-dataprovider</artifactId>
             <version>1.10.0</version>
             <scope>test</scope>
         </dependency>
+
+         <!-- Selenium -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+
+         <!-- Selenium ChromeDriver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
