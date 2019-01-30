@@ -24,8 +24,8 @@ public class AnnotationDemo {
         System.out.println("after class");
     }
 
-    @Test(expected=org.junit.ComparisonFailure.class)
-//    @Test(expected=junit.framework.ComparisonFailure.class)
+//    @Test(expected=org.junit.ComparisonFailure.class)
+    @Test(expected=junit.framework.ComparisonFailure.class)
     public void test1(){
         System.out.println("test1");
         Assert.assertEquals("Expected value is not equal to actual, ", "expected", "actual");
@@ -40,7 +40,7 @@ public class AnnotationDemo {
         Assert.assertTrue(expected.equals(expected));
         Assert.assertNotNull(actual);
         Assert.assertSame(expected, "expected");
-//        while(true);
+        while(true);
     }
 
 }

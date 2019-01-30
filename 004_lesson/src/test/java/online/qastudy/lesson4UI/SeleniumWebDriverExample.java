@@ -11,10 +11,11 @@ public class SeleniumWebDriverExample {
     public static final String SELENIUM = "https://www.seleniumhq.org/";
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", System.getenv("CHROMEDRIVER"));
+
+        System.setProperty("webdriver.chrome.driver", "C:\\driver.exe");
         WebDriver driver = new ChromeDriver();
 
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.MINUTES);
         driver.manage().window().maximize();
         driver.navigate().to(SELENIUM);
         driver.findElement(By.id("menu_projects")).click();
