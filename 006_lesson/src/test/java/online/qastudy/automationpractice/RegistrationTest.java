@@ -62,7 +62,12 @@ public class RegistrationTest extends BaseTest {
 
     @Test
     public void canCreateNewAccountChain() {
-        Assert.assertTrue(mainPage.clickSignIn().createNewAccountWithEmail(account.getEmail()).fillAndSubmitRegistrationForm(account).getAccountName().contains(account.getFirstCustomerName()));
+        Assert.assertTrue(mainPage.clickSignIn()
+                .createNewAccountWithEmail(account.getEmail())
+                .fillAndSubmitRegistrationForm(account)
+                .getAccountName()
+                .contains(account.getFirstCustomerName())
+        );
 
     }
 }

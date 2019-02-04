@@ -20,7 +20,7 @@ public abstract class BaseTest {
         System.setProperty("webdriver.chrome.driver", config.getProperty("chromedriver"));
         driver = new ChromeDriver();
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(config.getProperty("baseurl"));
     }

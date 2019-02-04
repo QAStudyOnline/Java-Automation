@@ -123,14 +123,13 @@ public class RegistrationPage {
         element.click();
     }
 
-    public MyAccountPage fillAndSubmitRegistrationForm(Account account){
+    public MyAccountPage fillAndSubmitRegistrationForm(Account account) {
         this.fillRegistrationForm(account);
         this.clickRegister();
         return new MyAccountPage(driver);
     }
 
     private void fillRegistrationForm(Account account) {
-
         selectGender(account.getGender());
         typeCustomerFirstName(account.getFirstCustomerName());
         typeCustomerLastName(account.getLastCustomerName());
