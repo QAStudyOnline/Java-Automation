@@ -1,6 +1,7 @@
 package online.qastudy.automationpractice;
 
 import online.qastudy.pages.MainPage;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +26,11 @@ public class MainPageTest {
     }
 
     @Test
-    public void canAddToCartATShirt() {
-        mainPage.openMainPage().openTShirtTab();
+    public void canSelectSizeLForTShirt() {
+        Assert.assertTrue(
+                mainPage.openMainPage()
+                        .openTShirtTab()
+                        .selectSizeL()
+                        .isSizeL());
     }
 }

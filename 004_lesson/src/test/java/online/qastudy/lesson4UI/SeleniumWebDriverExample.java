@@ -12,7 +12,7 @@ public class SeleniumWebDriverExample {
 
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\driver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getenv("CHROMEDRIVER"));
         WebDriver driver = new ChromeDriver();
 
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.MINUTES);
