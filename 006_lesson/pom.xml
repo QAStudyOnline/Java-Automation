@@ -37,6 +37,12 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- For annotation NotNull etc.-->
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>13.0</version>
+        </dependency>
     </dependencies>
 
 

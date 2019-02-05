@@ -1,5 +1,6 @@
 package online.qastudy.pages.attributes;
 
+
 import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,22 +26,22 @@ public class AlreadyRegistered {
         PageFactory.initElements(driver, this);
     }
 
-    public AlreadyRegistered typeEmail(String email){
+    public AlreadyRegistered typeEmail(String email) {
         return setUserData(email, emailField);
     }
 
-    public AlreadyRegistered typePassword(String passwd){
+    public AlreadyRegistered typePassword(String passwd) {
         return setUserData(passwd, passwdField);
     }
 
-    public void clickSingIn(){
+    public void clickSingIn() {
         signInBtn.click();
     }
 
     private AlreadyRegistered setUserData(@NotNull String passwd, @NotNull WebElement element) {
-        if (!element.getText().isEmpty()){
+        if (!element.getText().isEmpty()) {
             element.sendKeys(passwd);
-        }else {
+        } else {
             element.clear();
             element.sendKeys(passwd);
         }
