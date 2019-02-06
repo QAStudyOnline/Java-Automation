@@ -1,22 +1,22 @@
 package online.qastudy.automationpractice;
 
 import online.qastudy.pages.MainPage;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class MinPageTest extends BaseTest {
+public class MainPageTest extends BaseTest {
 
     private MainPage mainPage;
 
-    @Before
-    public void setupMainPage(){
+    @BeforeMethod
+    public void setupMainPage() {
         mainPage = new MainPage(driver);
     }
 
 
     @Test
-    public void canCheckTotalPriceForTShirt(){
+    public void canCheckTotlaPriceForTShirt() {
         mainPage.clickTShirtTab();
         mainPage.scrollToItem();
         mainPage.navigateToItemView();
@@ -26,6 +26,6 @@ public class MinPageTest extends BaseTest {
         String actualResult = mainPage.getTotalPrice();
         String expectedResult = "$18.51";
 
-        Assert.assertEquals("If test failed then total price was changed", expectedResult, actualResult);
+        Assert.assertEquals(expectedResult, actualResult, "If test failed then total price was changed");
     }
 }

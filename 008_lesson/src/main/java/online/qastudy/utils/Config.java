@@ -12,7 +12,6 @@ public final class Config {
             input = Config.class.getClassLoader().getResourceAsStream(propertyFile);
             config.load(input);
         } catch (Exception e) {
-            e.printStackTrace();
         }
         return config;
     }
