@@ -1,5 +1,6 @@
 package online.qastudy.automationpractice;
 
+import online.qastudy.dataprviders.RegistrationPageDtaProvider;
 import online.qastudy.model.Account;
 import online.qastudy.model.AccountBuilder;
 import online.qastudy.pages.MainPage;
@@ -8,6 +9,7 @@ import online.qastudy.pages.RegistrationPage;
 import online.qastudy.pages.SignInPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.Random;
@@ -60,13 +62,12 @@ public class RegistrationTest extends BaseTest {
 
     }
 
-    @Test
-    public void canCreateNewAccountChain() {
+    @Test(dataProvider = "registerNewUser", dataProviderClass = RegistrationPageDtaProvider.class)
+    public void canCreateNewAccountChain(Account userAccount) {
         Assert.assertTrue(mainPage.clickSignIn()
-                .createNewAccountWithEmail(account.getEmail())
-                .fillAndSubmitRegistrationForm(account)
-                .getAccountName()
-                .contains(account.getFirstCustomerName())
+                .createNewAccountWithEmail(userAccount.getEmail())
+                .fillAndSubmitRegistrationForm(userAccount)
+                .getAccountName().contains(userAccount.getFirstCustomerName())
         );
 
     }

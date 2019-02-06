@@ -54,8 +54,15 @@
         <!--Cucumber BDD framework -->
         <dependency>
             <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>2.0.0</version>
+            <artifactId>cucumber-java8</artifactId>
+            <version>4.2.2</version>
+        </dependency>
+
+        <!--Cucumber BDD framework TestNG integration-->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>4.2.2</version>
         </dependency>
 
     </dependencies>

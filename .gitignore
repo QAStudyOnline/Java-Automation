@@ -191,4 +191,4 @@ gradle-app.setting
 
 .idea
 automation-testing.iml
-*.iml
+*.imlsteps/
