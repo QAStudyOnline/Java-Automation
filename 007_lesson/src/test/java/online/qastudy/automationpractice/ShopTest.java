@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class MainPageTest extends BaseTest {
+public class ShopTest extends BaseTest {
 
     private MainPage mainPage;
 
