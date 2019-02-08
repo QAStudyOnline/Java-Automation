@@ -7,7 +7,7 @@ services:
       - "4444:4444"
 
   chrome:
-    image: selenium/node-chrome
+    image: selenium/node-chrome-debug
     volumes:
       - /dev/shm:/dev/shm
     depends_on:
@@ -17,7 +17,7 @@ services:
       - HUB_PORT=4444
 
   firefox:
-    image: selenium/node-firefox
+    image: selenium/node-firefox-debug
     volumes:
       - /dev/shm:/dev/shm
     depends_on:
