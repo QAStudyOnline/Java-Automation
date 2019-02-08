@@ -12,6 +12,8 @@ services:
       - /dev/shm:/dev/shm
     depends_on:
       - selenium-hub
+    ports:
+      - 5900:5900
     environment:
       - HUB_HOST=selenium-hub
       - HUB_PORT=4444
@@ -22,6 +24,8 @@ services:
       - /dev/shm:/dev/shm
     depends_on:
       - selenium-hub
+    ports:
+      - 5901:5900
     environment:
       - HUB_HOST=selenium-hub
       - HUB_PORT=4444
