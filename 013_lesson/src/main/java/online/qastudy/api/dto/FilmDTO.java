@@ -3,10 +3,12 @@ package online.qastudy.api.dto;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
-import javax.xml.bind.annotation.XmlElement;
 import java.io.Serializable;
 
+@JacksonXmlRootElement(localName = "Film", namespace = "urn:stackify:jackson")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "name",
@@ -14,11 +16,11 @@ import java.io.Serializable;
 })
 public class FilmDTO implements Serializable {
 
-    @XmlElement(name = "MovieName")
+    @JacksonXmlProperty(localName = "MovieName", namespace = "urn:stackify:jackson")
     @JsonProperty("name")
     private String name;
 
-    @XmlElement(name = "MovieMaker")
+    @JacksonXmlProperty(localName = "MovieMaker", namespace = "urn:stackify:jackson")
     @JsonProperty("director")
     private String director;
 
