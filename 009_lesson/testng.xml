@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="CrossBrowserTest" parallel="true">
+<suite name="CrossBrowserTest" parallel="true" threadCount="10">
     <test name="ChromeTest">
         <parameter name="browser" value="chrome"/>
         <classes>

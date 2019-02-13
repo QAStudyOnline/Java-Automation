@@ -7,20 +7,21 @@ import org.testng.TestListenerAdapter;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 @Listeners(TestListenerAdapter.class)
 public class ShopTest extends BaseTest {
 
     private MainPage mainPage;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setupMainPage() {
         mainPage = new MainPage(driver);
     }
 
 
-    @Test(groups = "smoke")
+    @Test(groups = {"smoke"})
     @Description("Test Description: Check Total price in the Cart with a T-Shirt.")
-    public void canCheckTotlaPriceForTShirt() {
+    public void canCheckTotalPriceForTShirt() {
         mainPage.clickTShirtTab();
         mainPage.scrollToItem();
         mainPage.navigateToItemView();

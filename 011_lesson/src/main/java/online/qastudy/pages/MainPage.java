@@ -70,35 +70,33 @@ public class MainPage {
         dressesTab.click();
         return this;
     }
-    @Step("Select a T-Shirt tab")
+
     public MainPage clickTShirtTab() {
         tShirtTab.click();
         return this;
     }
 
-    @Step("Open a sign in page")
-    public SignInPage clickSignIn(){
+    public SignInPage clickSignIn() {
         singIn.click();
         return new SignInPage(driver);
     }
 
-    public MainPage selectSizeL(){
+    public MainPage selectSizeL() {
         sizeLcheckbox.click();
         return this;
     }
 
-    @Step("Add item to cart")
-    public void clickAddToCart(){
+    public void clickAddToCart() {
         addCartButton.click();
     }
 
-    public void navigateToItemView () {
+    public void navigateToItemView() {
         Actions actions = new Actions(driver);
         actions.moveToElement(itemView).build().perform();
     }
 
-    public void scrollToItem(){
-        JavascriptExecutor executor = (JavascriptExecutor)driver;
+    public void scrollToItem() {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].scrollIntoView(true);", itemView);
     }
 
@@ -108,7 +106,7 @@ public class MainPage {
                         xpath(TITLE_PROCEED_TO_CHECKOUT))).click();
     }
 
-    public String getTotalPrice(){
+    public String getTotalPrice() {
         return totalSum.getText();
     }
 }
