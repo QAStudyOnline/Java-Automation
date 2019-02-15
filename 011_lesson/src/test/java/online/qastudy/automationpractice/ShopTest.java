@@ -1,6 +1,8 @@
 package online.qastudy.automationpractice;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import online.qastudy.pages.MainPage;
 import org.testng.Assert;
 import org.testng.TestListenerAdapter;
@@ -20,6 +22,7 @@ public class ShopTest extends BaseTest {
 
 
     @Test(groups = {"smoke"})
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Test Description: Check Total price in the Cart with a T-Shirt.")
     public void canCheckTotalPriceForTShirt() {
         mainPage.clickTShirtTab();

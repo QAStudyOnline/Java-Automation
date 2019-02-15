@@ -71,6 +71,7 @@ public class MainPage {
         return this;
     }
 
+    @Step("Select tab with T-Shirt...")
     public MainPage clickTShirtTab() {
         tShirtTab.click();
         return this;
@@ -86,19 +87,23 @@ public class MainPage {
         return this;
     }
 
+    @Step("Add goods to the cart...")
     public void clickAddToCart() {
         addCartButton.click();
     }
 
+    @Step("Navigate to item view.")
     public void navigateToItemView() {
         Actions actions = new Actions(driver);
         actions.moveToElement(itemView).build().perform();
     }
 
+    @Step("Scroll to goods image.")
     public void scrollToItem() {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].scrollIntoView(true);", itemView);
     }
+
 
     public void clickProceedToCheckout() {
         new WebDriverWait(driver, 10).

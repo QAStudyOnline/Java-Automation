@@ -18,7 +18,7 @@
         <aspectj.version>1.8.10</aspectj.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.selenium>3.14.0</version.selenium>
-        <suiteXmlFile>smoke.xml</suiteXmlFile>
+        <suiteXmlFile>testng.xml</suiteXmlFile>
     </properties>
 
     <dependencies>
