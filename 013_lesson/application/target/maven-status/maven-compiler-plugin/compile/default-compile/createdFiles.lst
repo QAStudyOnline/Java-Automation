@@ -1,7 +1,0 @@
-com/company/ApplicationRunner.class
-com/company/service/FilmService.class
-com/company/rest/FilmRestController.class
-com/company/service/FilmServiceImpl.class
-com/company/swagger/SwaggerConfig.class
-com/company/repository/FilmRepository.class
-com/company/model/Film.class
