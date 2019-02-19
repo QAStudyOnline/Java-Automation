@@ -8,12 +8,12 @@ public class User {
     private String email;
     private String password;
     private String phone;
-    private boolean userStatus;
+    private Integer userStatus;
 
     public User() {
     }
 
-    public User(Long id, String username, String firstName, String lastName, String email, String password, String phone, boolean userStatus) {
+    public User(Long id, String username, String firstName, String lastName, String email, String password, String phone, Integer userStatus) {
         this.id = id;
         this.username = username;
         this.firstName = firstName;
@@ -80,11 +80,11 @@ public class User {
         this.phone = phone;
     }
 
-    public boolean isUserStatus() {
+    public Integer getUserStatus() {
         return userStatus;
     }
 
-    public void setUserStatus(boolean userStatus) {
+    public void setUserStatus(Integer userStatus) {
         this.userStatus = userStatus;
     }
 
@@ -114,21 +114,21 @@ public class User {
         result = 33 * result + email.hashCode();
         result = 33 * result + password.hashCode();
         result = 33 * result + phone.hashCode();
-        result = 33 * result + (userStatus ? 1 : 0);
+        result = 33 * result + (userStatus.hashCode());
         return result;
     }
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", phone='" + phone + '\'' +
-                ", userStatus=" + userStatus +
+        return "User{" + "\n" +
+                "id=" + id + "\n" +
+                ", username='" + username + '\'' + "\n" +
+                ", firstName='" + firstName + '\'' + "\n" +
+                ", lastName='" + lastName + '\'' + "\n" +
+                ", email='" + email + '\'' + "\n" +
+                ", password='" + password + '\'' + "\n" +
+                ", phone='" + phone + '\'' + "\n" +
+                ", userStatus=" + userStatus + "\n" +
                 '}';
     }
 
@@ -140,14 +140,14 @@ public class User {
         private String email;
         private String password;
         private String phone;
-        private boolean userStatus;
+        private Integer userStatus;
 
-        public UserBuilder setId(Long id) {
+        public UserBuilder withId(Long id) {
             this.id = id;
             return this;
         }
 
-        public UserBuilder Username(String username) {
+        public UserBuilder withUsername(String username) {
             this.username = username;
             return this;
         }
@@ -178,7 +178,11 @@ public class User {
         }
 
         public UserBuilder withUserStatus(boolean userStatus) {
-            this.userStatus = userStatus;
+            if (userStatus == true) {
+                this.userStatus = 1;
+            } else {
+                this.userStatus = 0;
+            }
             return this;
         }
 
