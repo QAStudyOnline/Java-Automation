@@ -1,4 +1,4 @@
-package online.qastudy.lesson1;
+package online.qastudy.lesson1.base;
 
 public class LessonOneLoops {
     public static void main(String[] args) {

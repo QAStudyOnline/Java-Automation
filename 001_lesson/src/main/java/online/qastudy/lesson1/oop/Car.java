@@ -1,4 +1,4 @@
-package online.qastudy.lesson2.oop;
+package online.qastudy.lesson1.oop;
 
 public class Car {
     private String model;

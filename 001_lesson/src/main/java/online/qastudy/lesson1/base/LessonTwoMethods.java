@@ -1,4 +1,6 @@
-package online.qastudy.lesson2;
+package online.qastudy.lesson1.base;
+
+import online.qastudy.lesson1.oop.Wheels;
 
 import java.util.Random;
 
@@ -42,5 +44,8 @@ public class LessonTwoMethods {
         instance.printArray(array);
         System.out.print("\n");
         instance.printArray(instance.getRandomArray(30));
+
+        System.out.println(Wheels.LEFT_WHEEL);
+        System.out.println(Wheels.RIGHT_WHEEL);
     }
 }

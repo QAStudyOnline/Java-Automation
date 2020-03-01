@@ -1,4 +1,4 @@
-package online.qastudy.lesson1;
+package online.qastudy.lesson1.base;
 
 public class LessonOneVars {
     // Первый Урок и пример однострочного комментария
@@ -30,7 +30,7 @@ public class LessonOneVars {
     public static void main(String[] args) {
         byte variableByte = 0101;
         char variableChar = 'v';
-        char variableCharAsNumber = 118;
+        char variableCharAsNumber = 119;
         int variableInt = 1;
         long variableLong = 2;
         double variableDoubel = 2.5; // Класическая ошибка использовать double для работы с деньгами. Лучше брать класс BigDecimal
