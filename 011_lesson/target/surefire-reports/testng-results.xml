@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Smoke" duration-ms="86732" started-at="2020-07-06T20:52:26 EEST" finished-at="2020-07-06T20:53:53 EEST">
+    <groups>
+    </groups>
+    <test name="testing" duration-ms="86732" started-at="2020-07-06T20:52:26 EEST" finished-at="2020-07-06T20:53:53 EEST">
+      <class name="online.qastudy.automationpractice.RegistrationTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="setup" is-config="true" duration-ms="14678" started-at="2020-07-06T20:52:27 EEST" finished-at="2020-07-06T20:52:41 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="setupAccount" is-config="true" duration-ms="318" started-at="2020-07-06T20:52:42 EEST" finished-at="2020-07-06T20:52:42 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAccount -->
+        <test-method status="PASS" signature="canCreateNewAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="canCreateNewAccount" duration-ms="9015" started-at="2020-07-06T20:52:42 EEST" finished-at="2020-07-06T20:52:51 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canCreateNewAccount -->
+        <test-method status="PASS" signature="closeDown(org.testng.ITestResult)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="closeDown" is-config="true" duration-ms="4307" started-at="2020-07-06T20:52:51 EEST" finished-at="2020-07-06T20:52:55 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=canCreateNewAccount status=SUCCESS method=RegistrationTest.canCreateNewAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="setup" is-config="true" duration-ms="9584" started-at="2020-07-06T20:52:55 EEST" finished-at="2020-07-06T20:53:05 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="setupAccount" is-config="true" duration-ms="2" started-at="2020-07-06T20:53:05 EEST" finished-at="2020-07-06T20:53:05 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAccount -->
+        <test-method status="PASS" signature="canCreateNewAccountChain(online.qastudy.model.Account)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="canCreateNewAccountChain" duration-ms="9465" started-at="2020-07-06T20:53:05 EEST" data-provider="registerNewUser" finished-at="2020-07-06T20:53:14 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Account{gender='Mr.', firstCustomerName='Jack', lastCustomerName='Daniels', pass='Jack.Daniels', email='Jack.Daniels-262053597@gmail.com', day='8', month='8', year='1987', firstName='Yakov', lastName='Fayn', company='IBM', address1='San Francisco 1', address2='Moscow 2', city='London', state='Alabama', postcode='02206', country='United States', phone_mobile='+30995652333', alias='Alloha!'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canCreateNewAccountChain -->
+        <test-method status="PASS" signature="closeDown(org.testng.ITestResult)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="closeDown" is-config="true" duration-ms="336" started-at="2020-07-06T20:53:14 EEST" finished-at="2020-07-06T20:53:15 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=canCreateNewAccountChain status=SUCCESS method=RegistrationTest.canCreateNewAccountChain(online.qastudy.model.Account)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="setup" is-config="true" duration-ms="10078" started-at="2020-07-06T20:53:15 EEST" finished-at="2020-07-06T20:53:25 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="setupAccount" is-config="true" duration-ms="3" started-at="2020-07-06T20:53:25 EEST" finished-at="2020-07-06T20:53:25 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAccount -->
+        <test-method status="PASS" signature="canCreateNewAccountChain(online.qastudy.model.Account)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="canCreateNewAccountChain" duration-ms="8597" started-at="2020-07-06T20:53:25 EEST" data-provider="registerNewUser" finished-at="2020-07-06T20:53:33 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Account{gender='Mrs.', firstCustomerName='Napa', lastCustomerName='Valley', pass='Napa.Valley', email='Napa.Valley-1502129979@gmail.com', day='8', month='8', year='1987', firstName='Yakov', lastName='Fayn', company='IBM', address1='San Francisco 1', address2='Moscow 2', city='London', state='Alabama', postcode='02206', country='United States', phone_mobile='+30995652333', alias='Alloha!'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canCreateNewAccountChain -->
+        <test-method status="PASS" signature="closeDown(org.testng.ITestResult)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="closeDown" is-config="true" duration-ms="846" started-at="2020-07-06T20:53:33 EEST" finished-at="2020-07-06T20:53:34 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=canCreateNewAccountChain status=SUCCESS method=RegistrationTest.canCreateNewAccountChain(online.qastudy.model.Account)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="setup" is-config="true" duration-ms="9988" started-at="2020-07-06T20:53:34 EEST" finished-at="2020-07-06T20:53:44 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="setupAccount" is-config="true" duration-ms="1" started-at="2020-07-06T20:53:44 EEST" finished-at="2020-07-06T20:53:44 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAccount -->
+        <test-method status="PASS" signature="canCreateNewAccountChain(online.qastudy.model.Account)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="canCreateNewAccountChain" duration-ms="8513" started-at="2020-07-06T20:53:44 EEST" data-provider="registerNewUser" finished-at="2020-07-06T20:53:53 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Account{gender='Mr.', firstCustomerName='Grey', lastCustomerName='Goose', pass='Grey.Goose', email='Grey.Goose-1568844063@gmail.com', day='8', month='8', year='1987', firstName='Yakov', lastName='Fayn', company='IBM', address1='San Francisco 1', address2='Moscow 2', city='London', state='Alabama', postcode='02206', country='United States', phone_mobile='+30995652333', alias='Alloha!'}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canCreateNewAccountChain -->
+        <test-method status="PASS" signature="closeDown(org.testng.ITestResult)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc]" name="closeDown" is-config="true" duration-ms="362" started-at="2020-07-06T20:53:53 EEST" finished-at="2020-07-06T20:53:53 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=canCreateNewAccountChain status=SUCCESS method=RegistrationTest.canCreateNewAccountChain(online.qastudy.model.Account)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@2c88b9fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDown -->
+      </class> <!-- online.qastudy.automationpractice.RegistrationTest -->
+    </test> <!-- testing -->
+  </suite> <!-- Smoke -->
+</testng-results>

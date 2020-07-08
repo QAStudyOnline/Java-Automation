@@ -1,9 +1,7 @@
 package online.qastudy.automationpractice;
 
 import online.qastudy.pages.MainPage;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -23,6 +21,7 @@ public class MainPageTest {
         this.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
         this.mainPage = new MainPage(this.driver);
+
     }
 
     @Test
@@ -32,5 +31,12 @@ public class MainPageTest {
                         .openTShirtTab()
                         .selectSizeL()
                         .isSizeL());
+
+    }
+
+    @After
+    public void cleanup(){
+//        this.driver.close();
+      driver.quit();
     }
 }

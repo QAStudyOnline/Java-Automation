@@ -200,4 +200,29 @@ public class Account {
     public void setAlias(String alias) {
         this.alias = alias;
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "gender='" + gender + '\'' +
+                ", firstCustomerName='" + firstCustomerName + '\'' +
+                ", lastCustomerName='" + lastCustomerName + '\'' +
+                ", pass='" + pass + '\'' +
+                ", email='" + email + '\'' +
+                ", day='" + day + '\'' +
+                ", month='" + month + '\'' +
+                ", year='" + year + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", company='" + company + '\'' +
+                ", address1='" + address1 + '\'' +
+                ", address2='" + address2 + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", postcode='" + postcode + '\'' +
+                ", country='" + country + '\'' +
+                ", phone_mobile='" + phone_mobile + '\'' +
+                ", alias='" + alias + '\'' +
+                '}';
+    }
 }

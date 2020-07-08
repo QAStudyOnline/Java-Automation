@@ -1,8 +1,11 @@
 package online.qastudy.api.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
     private Long id;
-    private String username;
+    @JsonProperty(value = "username")
+    private String userName;
     private String firstName;
     private String lastName;
     private String email;
@@ -13,9 +16,9 @@ public class User {
     public User() {
     }
 
-    public User(Long id, String username, String firstName, String lastName, String email, String password, String phone, Integer userStatus) {
+    public User(Long id, String userName, String firstName, String lastName, String email, String password, String phone, Integer userStatus) {
         this.id = id;
-        this.username = username;
+        this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -32,12 +35,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getFirstName() {
@@ -97,7 +100,7 @@ public class User {
 
         if (userStatus != user.userStatus) return false;
         if (!id.equals(user.id)) return false;
-        if (!username.equals(user.username)) return false;
+        if (!userName.equals(user.userName)) return false;
         if (!firstName.equals(user.firstName)) return false;
         if (!lastName.equals(user.lastName)) return false;
         if (!email.equals(user.email)) return false;
@@ -108,7 +111,7 @@ public class User {
     @Override
     public int hashCode() {
         int result = id.hashCode();
-        result = 33 * result + username.hashCode();
+        result = 33 * result + userName.hashCode();
         result = 33 * result + firstName.hashCode();
         result = 33 * result + lastName.hashCode();
         result = 33 * result + email.hashCode();
@@ -122,7 +125,7 @@ public class User {
     public String toString() {
         return "User{" + "\n" +
                 "id=" + id + "\n" +
-                ", username='" + username + '\'' + "\n" +
+                ", username='" + userName + '\'' + "\n" +
                 ", firstName='" + firstName + '\'' + "\n" +
                 ", lastName='" + lastName + '\'' + "\n" +
                 ", email='" + email + '\'' + "\n" +

@@ -64,8 +64,8 @@ public class RegistrationPage {
 
     private void selectBirthYear(String year) {
         WebElement yearDropDown = driver.findElement(By.id("years"));
-        Select value = new Select(yearDropDown);
-        value.selectByValue(year);
+        Select dropDownSelect = new Select(yearDropDown);
+        dropDownSelect.selectByValue(year);
     }
 
     private void typeFirstName(String firstName) {

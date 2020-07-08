@@ -11,10 +11,9 @@ public class MarshalingExample {
 
 
     public static void main(String[] args) {
-
         String json = null;
         String jsonNiceLook = null;
-        String jsonPath = "/home/ymaks/sources/IdeaProjects/PROG_KIEV_UA/automation-testing/013_lesson/src/main/resources/user.json";
+        String jsonPath = "C:\\Users\\egorm\\IdeaProjects\\automation\\013_lesson\\src\\main\\resources\\user.json";
         ObjectMapper mapper = new ObjectMapper();
         User testUser1 = new User();
 

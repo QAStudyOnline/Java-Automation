@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="85.647" tests="20" errors="0" skipped="12" failures="6">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\bin"/>
+    <property name="java.vm.version" value="25.242-b08"/>
+    <property name="java.vm.vendor" value=""/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\egorm\IdeaProjects\automation\009_lesson"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\egorm\IdeaProjects\automation\009_lesson"/>
+    <property name="java.runtime.version" value="1.8.0_242-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\egorm\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\Apache\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Apache\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\gradle-6.2.1\bin;C:\Program Files\Apache\apache-tomcat-10.0.0-M1\bin;C:\Users\egorm\AppData\Local\Taurus\bin;C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\egorm\AppData\Local\Microsoft\WindowsApps;;C:\Users\egorm\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin;;C:\Program Files (x86)\Nmap;C:\Users\egorm\AppData\Local\Programs\Fiddler;."/>
+    <property name="maven.conf" value="C:\Program Files\Apache\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\Apache\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\egorm"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="egorm"/>
+    <property name="java.class.path" value="C:\Program Files\Apache\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_242"/>
+    <property name="java.ext.dirs" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\lib\resources.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\lib\rt.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\lib\sunrsasign.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\lib\jsse.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\lib\jce.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\lib\charsets.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\lib\jfr.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.home" value="C:\Program Files\Apache\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="canCreateNewAccountChain" classname="online.qastudy.automationpractice.RegistrationTest" time="1.838">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=83.0.4103.61)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}&#10;Session ID: 4c6589c67a2659f7aab918822c50de3d" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}
+Session ID: 4c6589c67a2659f7aab918822c50de3d
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccountChain(RegistrationTest.java:67)
+</failure>
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+]]></system-out>
+    <system-err><![CDATA[Jul 08, 2020 6:47:08 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 6:47:08 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 6:47:08 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 6:47:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2020 6:47:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2020 6:47:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="canCreateNewAccountChain" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped message="invalid session id&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}&#10;Session ID: 4c6589c67a2659f7aab918822c50de3d"/>
+  </testcase>
+  <testcase name="canCreateNewAccountChain" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped message="invalid session id&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}&#10;Session ID: 4c6589c67a2659f7aab918822c50de3d"/>
+  </testcase>
+  <testcase name="canCreateNewAccountChain" classname="online.qastudy.automationpractice.RegistrationTest" time="13.46">
+    <failure message="Tried to run command without establishing a connection&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}&#10;Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b&#10;*** Element info: {Using=id, value=lastname}" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}
+Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b
+*** Element info: {Using=id, value=lastname}
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccountChain(RegistrationTest.java:69)
+</failure>
+  </testcase>
+  <testcase name="canCreateNewAccountChain" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped message="Tried to run command without establishing a connection&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}&#10;Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b"/>
+  </testcase>
+  <testcase name="canCreateNewAccountChain" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped message="Tried to run command without establishing a connection&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}&#10;Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b"/>
+  </testcase>
+  <testcase name="canCheckTotlaPriceForTShirt" classname="online.qastudy.automationpractice.ShopTest" time="2.346"/>
+  <testcase name="canCheckTotlaPriceForTShirt" classname="online.qastudy.automationpractice.ShopTest" time="4.772"/>
+  <testcase name="canCreateNewAccount" classname="online.qastudy.automationpractice.RegistrationTest" time="7.028">
+    <failure message="invalid session id&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}&#10;Session ID: 4c6589c67a2659f7aab918822c50de3d" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}
+Session ID: 4c6589c67a2659f7aab918822c50de3d
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccount(RegistrationTest.java:57)
+</failure>
+    <system-err><![CDATA[Jul 08, 2020 6:47:24 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="canCreateNewAccount" classname="online.qastudy.automationpractice.RegistrationTest" time="2.39">
+    <failure message="The element reference of &lt;a class=&quot;login&quot; href=&quot;http://automationpractice.com/index.php?controller=my-account&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}&#10;Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+The element reference of <a class="login" href="http://automationpractice.com/index.php?controller=my-account"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}
+Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccount(RegistrationTest.java:55)
+]]></failure>
+    <system-err><![CDATA[Jul 08, 2020 6:47:33 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Jul 08, 2020 6:47:33 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Jul 08, 2020 6:47:33 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Jul 08, 2020 6:47:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2020 6:47:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 08, 2020 6:47:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="cleanup" classname="online.qastudy.automationpractice.RegistrationTest" time="7.038">
+    <failure message="invalid session id&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}&#10;Session ID: 4c6589c67a2659f7aab918822c50de3d" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}
+Session ID: 4c6589c67a2659f7aab918822c50de3d
+</failure>
+  </testcase>
+  <testcase name="cleanup" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="cleanup" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="cleanup" classname="online.qastudy.automationpractice.RegistrationTest" time="13.472">
+    <failure message="Tried to run command without establishing a connection&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}&#10;Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}
+Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b
+</failure>
+  </testcase>
+  <testcase name="cleanup" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="cleanup" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setupAccount" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Jul 08, 2020 6:47:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="setupAccount" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Jul 08, 2020 6:47:28 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 08, 2020 6:47:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="setupAccount" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Jul 08, 2020 6:48:08 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Jul 08, 2020 6:48:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="setupAccount" classname="online.qastudy.automationpractice.RegistrationTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Jul 08, 2020 6:48:19 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+Jul 08, 2020 6:48:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

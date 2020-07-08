@@ -2,6 +2,7 @@ package online.qastudy.automationpractice;
 
 import online.qastudy.pages.MainPage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -9,14 +10,14 @@ public class ShopTest extends BaseTest {
 
     private MainPage mainPage;
 
-    @BeforeMethod
+    @BeforeClass
     public void setupMainPage() {
         mainPage = new MainPage(driver);
     }
 
 
     @Test
-    public void canCheckTotlaPriceForTShirt() {
+    public void canCheckTotalPriceForTShirt() {
         mainPage.clickTShirtTab();
         mainPage.scrollToItem();
         mainPage.navigateToItemView();

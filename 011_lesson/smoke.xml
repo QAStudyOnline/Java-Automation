@@ -3,13 +3,8 @@
 <suite name="Smoke">
 
     <test name="testing">
-        <groups>
-            <run>
-                <include name="smoke"/>
-            </run>
-        </groups>
         <classes>
-            <class name="online.qastudy.automationpractice.ShopTest"/>
+            <class name="online.qastudy.automationpractice.RegistrationTest"/>
         </classes>
     </test>
 </suite>

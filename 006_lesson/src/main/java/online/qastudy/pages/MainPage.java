@@ -1,15 +1,15 @@
 package online.qastudy.pages;
 
-import online.qastudy.utils.TestHelper;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static online.qastudy.utils.TestHelper.waitSeconds;
 
 public class MainPage {
     private WebDriver driver;
@@ -76,27 +76,27 @@ public class MainPage {
         return this;
     }
 
-    public SignInPage clickSignIn(){
+    public SignInPage clickSignIn() {
         singIn.click();
         return new SignInPage(driver);
     }
 
-    public MainPage selectSizeL(){
+    public MainPage selectSizeL() {
         sizeLcheckbox.click();
         return this;
     }
 
-    public void clickAddToCart(){
+    public void clickAddToCart() {
         addCartButton.click();
     }
 
-    public void navigateToItemView () {
+    public void navigateToItemView() {
         Actions actions = new Actions(driver);
         actions.moveToElement(itemView).build().perform();
     }
 
-    public void scrollToItem(){
-        JavascriptExecutor executor = (JavascriptExecutor)driver;
+    public void scrollToItem() {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].scrollIntoView(true);", itemView);
     }
 
@@ -106,7 +106,23 @@ public class MainPage {
                         xpath(TITLE_PROCEED_TO_CHECKOUT))).click();
     }
 
-    public String getTotalPrice(){
+    public MainPage waitTwoSecond() {
+        WebElement element = null;
+        for (int i = 0; i < 5; i++) {
+            try {
+                element = driver.findElement(By.xpath(TITLE_PROCEED_TO_CHECKOUT));
+                if (element.isDisplayed()){
+                    break;
+                }
+            } catch (NoSuchElementException e) {
+                break;
+            }
+        }
+        return this;
+    }
+
+
+    public String getTotalPrice() {
         return totalSum.getText();
     }
 }

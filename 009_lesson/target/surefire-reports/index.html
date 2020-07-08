@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-CrossBrowserTest">
+              <span class="suite-name border-failed">CrossBrowserTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-CrossBrowserTest">
+                    <span>C:\Users\egorm\IdeaProjects\automation\009_lesson\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-CrossBrowserTest">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-CrossBrowserTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-CrossBrowserTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-CrossBrowserTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-CrossBrowserTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-CrossBrowserTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 4 failed,  4 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CrossBrowserTest" class="hide-methods failed suite-CrossBrowserTest"> (hide)</a> <!-- hide-methods failed suite-CrossBrowserTest -->
+                      <a href="#" panel-name="suite-CrossBrowserTest" class="show-methods failed suite-CrossBrowserTest"> (show)</a> <!-- show-methods failed suite-CrossBrowserTest -->
+                    </span>
+                    <div class="method-list-content failed suite-CrossBrowserTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTest" title="online.qastudy.automationpractice.RegistrationTest" hash-for-method="canCreateNewAccount">canCreateNewAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTest" title="online.qastudy.automationpractice.RegistrationTest" hash-for-method="canCreateNewAccount">canCreateNewAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTest" title="online.qastudy.automationpractice.RegistrationTest" hash-for-method="canCreateNewAccountChain(online.qastudy.model.Account@4e718207)">canCreateNewAccountChain(online.qastudy.model.Account@4e718207)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTest" title="online.qastudy.automationpractice.RegistrationTest" hash-for-method="canCreateNewAccountChain(online.qastudy.model.Account@6ec8211c)">canCreateNewAccountChain(online.qastudy.model.Account@6ec8211c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CrossBrowserTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-CrossBrowserTest" class="hide-methods skipped suite-CrossBrowserTest"> (hide)</a> <!-- hide-methods skipped suite-CrossBrowserTest -->
+                      <a href="#" panel-name="suite-CrossBrowserTest" class="show-methods skipped suite-CrossBrowserTest"> (show)</a> <!-- show-methods skipped suite-CrossBrowserTest -->
+                    </span>
+                    <div class="method-list-content skipped suite-CrossBrowserTest">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTest" title="online.qastudy.automationpractice.RegistrationTest" hash-for-method="canCreateNewAccountChain">canCreateNewAccountChain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTest" title="online.qastudy.automationpractice.RegistrationTest" hash-for-method="canCreateNewAccountChain">canCreateNewAccountChain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTest" title="online.qastudy.automationpractice.RegistrationTest" hash-for-method="canCreateNewAccountChain">canCreateNewAccountChain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTest" title="online.qastudy.automationpractice.RegistrationTest" hash-for-method="canCreateNewAccountChain">canCreateNewAccountChain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-CrossBrowserTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CrossBrowserTest" class="hide-methods passed suite-CrossBrowserTest"> (hide)</a> <!-- hide-methods passed suite-CrossBrowserTest -->
+                      <a href="#" panel-name="suite-CrossBrowserTest" class="show-methods passed suite-CrossBrowserTest"> (show)</a> <!-- show-methods passed suite-CrossBrowserTest -->
+                    </span>
+                    <div class="method-list-content passed suite-CrossBrowserTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTest" title="online.qastudy.automationpractice.ShopTest" hash-for-method="canCheckTotlaPriceForTShirt">canCheckTotlaPriceForTShirt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTest" title="online.qastudy.automationpractice.ShopTest" hash-for-method="canCheckTotlaPriceForTShirt">canCheckTotlaPriceForTShirt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CrossBrowserTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CrossBrowserTest" class="panel CrossBrowserTest">
+          <div class="suite-CrossBrowserTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">online.qastudy.automationpractice.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="canCreateNewAccount">
+                  </a> <!-- canCreateNewAccount -->
+                  <span class="method-name">canCreateNewAccount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}
+Session ID: 4c6589c67a2659f7aab918822c50de3d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:122)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
+	at online.qastudy.pages.RegistrationPage.selectCountry(RegistrationPage.java:107)
+	at online.qastudy.pages.RegistrationPage.fillRegistrationForm(RegistrationPage.java:147)
+	at online.qastudy.pages.RegistrationPage.fillAndSubmitRegistrationForm(RegistrationPage.java:127)
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccount(RegistrationTest.java:57)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canCreateNewAccount">
+                  </a> <!-- canCreateNewAccount -->
+                  <span class="method-name">canCreateNewAccount</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;a class=&quot;login&quot; href=&quot;http://automationpractice.com/index.php?controller=my-account&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}
+Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at online.qastudy.pages.MainPage.clickSignIn(MainPage.java:79)
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccount(RegistrationTest.java:55)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canCreateNewAccountChain(online.qastudy.model.Account@4e718207)">
+                  </a> <!-- canCreateNewAccountChain(online.qastudy.model.Account@4e718207) -->
+                  <span class="method-name">canCreateNewAccountChain</span>
+                  <span class="parameters">(online.qastudy.model.Account@4e718207)</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}
+Session ID: 4c6589c67a2659f7aab918822c50de3d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at online.qastudy.pages.MainPage.clickSignIn(MainPage.java:79)
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccountChain(RegistrationTest.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canCreateNewAccountChain(online.qastudy.model.Account@6ec8211c)">
+                  </a> <!-- canCreateNewAccountChain(online.qastudy.model.Account@6ec8211c) -->
+                  <span class="method-name">canCreateNewAccountChain</span>
+                  <span class="parameters">(online.qastudy.model.Account@6ec8211c)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}
+Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b
+*** Element info: {Using=id, value=lastname}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at online.qastudy.pages.RegistrationPage.typeLastName(RegistrationPage.java:76)
+	at online.qastudy.pages.RegistrationPage.fillRegistrationForm(RegistrationPage.java:140)
+	at online.qastudy.pages.RegistrationPage.fillAndSubmitRegistrationForm(RegistrationPage.java:127)
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccountChain(RegistrationTest.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserTest-class-failed -->
+          <div class="suite-CrossBrowserTest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">online.qastudy.automationpractice.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="canCreateNewAccountChain">
+                  </a> <!-- canCreateNewAccountChain -->
+                  <span class="method-name">canCreateNewAccountChain</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}
+Session ID: 4c6589c67a2659f7aab918822c50de3d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:690)
+	at online.qastudy.automationpractice.BaseTest.cleanup(BaseTest.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canCreateNewAccountChain">
+                  </a> <!-- canCreateNewAccountChain -->
+                  <span class="method-name">canCreateNewAccountChain</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}
+Session ID: 4c6589c67a2659f7aab918822c50de3d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:690)
+	at online.qastudy.automationpractice.BaseTest.cleanup(BaseTest.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canCreateNewAccountChain">
+                  </a> <!-- canCreateNewAccountChain -->
+                  <span class="method-name">canCreateNewAccountChain</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}
+Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:690)
+	at online.qastudy.automationpractice.BaseTest.cleanup(BaseTest.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canCreateNewAccountChain">
+                  </a> <!-- canCreateNewAccountChain -->
+                  <span class="method-name">canCreateNewAccountChain</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-7F87TLR&apos;, ip: &apos;169.254.10.133&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_242&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}
+Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:690)
+	at online.qastudy.automationpractice.BaseTest.cleanup(BaseTest.java:53)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserTest-class-skipped -->
+          <div class="suite-CrossBrowserTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">online.qastudy.automationpractice.ShopTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="canCheckTotlaPriceForTShirt">
+                  </a> <!-- canCheckTotlaPriceForTShirt -->
+                  <span class="method-name">canCheckTotlaPriceForTShirt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canCheckTotlaPriceForTShirt">
+                  </a> <!-- canCheckTotlaPriceForTShirt -->
+                  <span class="method-name">canCheckTotlaPriceForTShirt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserTest-class-passed -->
+        </div> <!-- panel CrossBrowserTest -->
+        <div panel-name="test-xml-CrossBrowserTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\egorm\IdeaProjects\automation\009_lesson\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;CrossBrowserTest&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;ChromeTest&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;online.qastudy.automationpractice.ShopTest&quot;/&gt;
+      &lt;class name=&quot;online.qastudy.automationpractice.RegistrationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;FirefoxTest&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;online.qastudy.automationpractice.RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;online.qastudy.automationpractice.ShopTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+&lt;/suite&gt; &lt;!-- CrossBrowserTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CrossBrowserTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CrossBrowserTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">FirefoxTest (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CrossBrowserTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CrossBrowserTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CrossBrowserTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CrossBrowserTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CrossBrowserTest');
+function tableData_CrossBrowserTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'canCreateNewAccountChain')
+data.setCell(0, 2, 'online.qastudy.automationpractice.RegistrationTest')
+data.setCell(0, 3, 13925);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'canCreateNewAccount')
+data.setCell(1, 2, 'online.qastudy.automationpractice.RegistrationTest')
+data.setCell(1, 3, 9127);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'canCheckTotlaPriceForTShirt')
+data.setCell(2, 2, 'online.qastudy.automationpractice.ShopTest')
+data.setCell(2, 3, 6497);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'canCheckTotlaPriceForTShirt')
+data.setCell(3, 2, 'online.qastudy.automationpractice.ShopTest')
+data.setCell(3, 3, 4991);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'canCreateNewAccount')
+data.setCell(4, 2, 'online.qastudy.automationpractice.RegistrationTest')
+data.setCell(4, 3, 2389);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'canCreateNewAccountChain')
+data.setCell(5, 2, 'online.qastudy.automationpractice.RegistrationTest')
+data.setCell(5, 3, 1803);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'canCreateNewAccountChain')
+data.setCell(6, 2, 'online.qastudy.automationpractice.RegistrationTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'canCreateNewAccountChain')
+data.setCell(7, 2, 'online.qastudy.automationpractice.RegistrationTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'canCreateNewAccountChain')
+data.setCell(8, 2, 'online.qastudy.automationpractice.RegistrationTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'canCreateNewAccountChain')
+data.setCell(9, 2, 'online.qastudy.automationpractice.RegistrationTest')
+data.setCell(9, 3, 0);
+window.suiteTableData['CrossBrowserTest']= { tableData: data, tableDiv: 'times-div-CrossBrowserTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <div id="times-div-CrossBrowserTest">
+              </div> <!-- times-div-CrossBrowserTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CrossBrowserTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CrossBrowserTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CrossBrowserTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CrossBrowserTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">canCreateNewAccountChain</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">canCreateNewAccountChain</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">canCreateNewAccountChain</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">canCreateNewAccountChain</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.ShopTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.ShopTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMainPage</span>
+                <span class="method-start">5949 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">canCheckTotlaPriceForTShirt</span>
+                <span class="method-start">6007 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAccount</span>
+                <span class="method-start">6550 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canCreateNewAccount</span>
+                <span class="method-start">6552 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAccount</span>
+                <span class="method-start">8651 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canCreateNewAccountChain(online.qastudy.model.Account@4e718207)</span>
+                <span class="method-start">8653 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">10484 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.ShopTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">10999 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">15637 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cleanup</span>
+                <span class="method-start">15681 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAccount</span>
+                <span class="method-start">19849 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">19852 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">19853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAccount</span>
+                <span class="method-start">24353 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">24354 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.ShopTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">24434 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">24434 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">24436 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.ShopTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupMainPage</span>
+                <span class="method-start">44550 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">canCheckTotlaPriceForTShirt</span>
+                <span class="method-start">44552 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAccount</span>
+                <span class="method-start">45811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canCreateNewAccountChain(online.qastudy.model.Account@6ec8211c)</span>
+                <span class="method-start">45812 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAccount</span>
+                <span class="method-start">46277 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canCreateNewAccount</span>
+                <span class="method-start">46278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">48668 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.ShopTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">51050 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">online.qastudy.automationpractice.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">cleanup</span>
+                <span class="method-start">59738 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">59750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAccount</span>
+                <span class="method-start">70814 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">70815 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">70815 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupAccount</span>
+                <span class="method-start">84110 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">84111 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

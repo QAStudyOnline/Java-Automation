@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [CrossBrowserTest]" parallel="methods">
+  <test thread-count="5" verbose="0" name="ChromeTest(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="online.qastudy.automationpractice.RegistrationTest">
+        <methods>
+          <include name="setupAccount"/>
+          <include name="canCreateNewAccount"/>
+          <include name="setup"/>
+          <include name="cleanup"/>
+          <include name="canCreateNewAccountChain" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- online.qastudy.automationpractice.RegistrationTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" verbose="0" name="FirefoxTest(failed)" parallel="methods">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="online.qastudy.automationpractice.RegistrationTest">
+        <methods>
+          <include name="setupAccount"/>
+          <include name="canCreateNewAccount"/>
+          <include name="setup"/>
+          <include name="cleanup"/>
+          <include name="canCreateNewAccountChain" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- online.qastudy.automationpractice.RegistrationTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowserTest] -->

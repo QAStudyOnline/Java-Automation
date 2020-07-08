@@ -1,0 +1,66 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 6, Errors: 0, Skipped: 12, Time elapsed: 85.647 sec <<< FAILURE! - in TestSuite
+canCreateNewAccountChain(online.qastudy.automationpractice.RegistrationTest)  Time elapsed: 1.838 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}
+Session ID: 4c6589c67a2659f7aab918822c50de3d
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccountChain(RegistrationTest.java:67)
+
+canCreateNewAccount(online.qastudy.automationpractice.RegistrationTest)  Time elapsed: 7.028 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}
+Session ID: 4c6589c67a2659f7aab918822c50de3d
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccount(RegistrationTest.java:57)
+
+cleanup(online.qastudy.automationpractice.RegistrationTest)  Time elapsed: 7.038 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.MCi1RJ}, goog:chromeOptions: {debuggerAddress: localhost:36705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4c6589c67a2659f7aab918822c5...}
+Session ID: 4c6589c67a2659f7aab918822c50de3d
+
+canCreateNewAccount(online.qastudy.automationpractice.RegistrationTest)  Time elapsed: 2.39 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+The element reference of <a class="login" href="http://automationpractice.com/index.php?controller=my-account"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}
+Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccount(RegistrationTest.java:55)
+
+canCreateNewAccountChain(online.qastudy.automationpractice.RegistrationTest)  Time elapsed: 13.46 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}
+Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b
+*** Element info: {Using=id, value=lastname}
+	at online.qastudy.automationpractice.RegistrationTest.canCreateNewAccountChain(RegistrationTest.java:69)
+
+cleanup(online.qastudy.automationpractice.RegistrationTest)  Time elapsed: 13.472 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-7F87TLR', ip: '169.254.10.133', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 107, moz:profile: /tmp/rust_mozprofilecb2KcJ, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.19.76-linuxkit, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 0cd4ebd7-38fa-4398-8d4a-a6a...}
+Session ID: 0cd4ebd7-38fa-4398-8d4a-a6a47982894b
+

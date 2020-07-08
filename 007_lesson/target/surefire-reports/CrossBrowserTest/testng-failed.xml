@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="0" name="Failed suite [CrossBrowserTest]" parallel="methods">
+  <test thread-count="2" verbose="0" name="ChromeTest(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="online.qastudy.automationpractice.ShopTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setupMainPage"/>
+          <include name="canCheckTotalPriceForTShirt"/>
+          <include name="cleanup"/>
+        </methods>
+      </class> <!-- online.qastudy.automationpractice.ShopTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" verbose="0" name="FirefoxTest(failed)" parallel="classes">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="online.qastudy.automationpractice.ShopTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setupMainPage"/>
+          <include name="canCheckTotalPriceForTShirt"/>
+          <include name="cleanup"/>
+        </methods>
+      </class> <!-- online.qastudy.automationpractice.ShopTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowserTest] -->

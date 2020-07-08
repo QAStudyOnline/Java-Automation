@@ -30,13 +30,14 @@ public class LessonOneVars {
     public static void main(String[] args) {
         byte variableByte = 0101;
         char variableChar = 'v';
-        char variableCharAsNumber = 119;
+        char variableCharAsNumber = 256;
         int variableInt = 1;
         long variableLong = 2;
         double variableDoubel = 2.5; // Класическая ошибка использовать double для работы с деньгами. Лучше брать класс BigDecimal
         float variableFloat = 2.5f;
         boolean variableBoolean = false;
         String variableString = "automation testing is awesome!";
+        String varString = new String("Hello Java!!");
 
         System.out.println("Byte var is: " + variableByte);
         System.out.println("Char var is: " + variableChar);
@@ -47,6 +48,6 @@ public class LessonOneVars {
         System.out.println("Float var is: " + variableFloat);
         System.out.println("Boolean var is: " + variableBoolean);
         System.out.println("String var is: " + variableString);
-
+        System.out.println("Sting var : "+ varString);
     }
 }

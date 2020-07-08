@@ -8,6 +8,7 @@ import online.qastudy.pages.RegistrationPage;
 import online.qastudy.pages.SignInPage;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Random;
@@ -60,6 +61,7 @@ public class RegistrationTest extends BaseTest {
 
     }
 
+    @Ignore
     @Test
     public void canCreateNewAccountChain() {
         Assert.assertTrue(mainPage.clickSignIn()

@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="CrossBrowserTest" parallel="true" threadCount="10">
-    <test name="ChromeTest">
+<suite name="CrossBrowserTest" parallel="test" threadCount="10">
+    <test name="ChromeTest" parallel="calass">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="online.qastudy.automationpractice.ShopTest"/>
-            <class name="online.qastudy.automationpractice.RegistrationTest" />
         </classes>
     </test>
-    <test name="FirefoxTest">
+    <test name="FirefoxTest" parallel="calass">
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="online.qastudy.automationpractice.RegistrationTest"/>
-            <class name="online.qastudy.automationpractice.ShopTest"/>
         </classes>
     </test>
 </suite>

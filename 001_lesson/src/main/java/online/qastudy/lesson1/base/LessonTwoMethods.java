@@ -44,8 +44,5 @@ public class LessonTwoMethods {
         instance.printArray(array);
         System.out.print("\n");
         instance.printArray(instance.getRandomArray(30));
-
-        System.out.println(Wheels.LEFT_WHEEL);
-        System.out.println(Wheels.RIGHT_WHEEL);
     }
 }

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 36.401 s <<< FAILURE! - in TestSuite
+online.qastudy.automationpractice.ShopTest.canCheckTotalPriceForTShirt  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException
+	at online.qastudy.automationpractice.ShopTest.canCheckTotalPriceForTShirt(ShopTest.java:21)
+
+online.qastudy.automationpractice.ShopTest.canCheckTotalPriceForTShirt  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at online.qastudy.automationpractice.ShopTest.canCheckTotalPriceForTShirt(ShopTest.java:21)
+

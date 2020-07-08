@@ -8,11 +8,10 @@ import online.qastudy.utils.TestHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.openqa.selenium.opera.OperaDriver;
+import org.testng.annotations.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +24,7 @@ public abstract class BaseTest {
     private final Properties config = Config.loadProperties("test.properties");
 
     @Parameters("browser")
-    @BeforeMethod(alwaysRun = true)
+    @BeforeClass(alwaysRun = true)
     public void setup(@Optional("chrome") String browser) {
         if (browser.toLowerCase().equals("chrome")) {
             WebDriverManager
@@ -36,7 +35,14 @@ public abstract class BaseTest {
         } else if (browser.toLowerCase().equals("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
+        } else if (browser.toLowerCase().equals("edge")) {
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver();
+        } else if (browser.toLowerCase().equals("opera")) {
+            WebDriverManager.operadriver().setup();
+            driver = new OperaDriver();
         }
+
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -44,7 +50,7 @@ public abstract class BaseTest {
     }
 
 
-    @AfterMethod
+    @AfterClass
     public void cleanup() {
         if (driver != null) {
             driver.manage().deleteAllCookies();

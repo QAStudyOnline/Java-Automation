@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: online.qastidy.film.api.UserApiTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.83 sec - in online.qastidy.film.api.UserApiTest

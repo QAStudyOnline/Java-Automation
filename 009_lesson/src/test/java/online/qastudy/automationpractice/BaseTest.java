@@ -32,13 +32,13 @@ public abstract class BaseTest {
     @BeforeMethod(alwaysRun = true)
     public void setup(@Optional("chrome") String browser) throws MalformedURLException {
         if (browser.toLowerCase().equals("chrome")) {
-            WebDriverManager.chromedriver().version(config.getProperty("chrome.version")).setup();
+
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-            driver = new RemoteWebDriver(new URL(config.getProperty("webdriver.hub.chrome")),capabilities);
+            driver = new RemoteWebDriver(new URL(config.getProperty("webdriver.hub.chrome")), capabilities);
         } else if (browser.toLowerCase().equals("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
+
             DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-            driver = new RemoteWebDriver(new URL(config.getProperty("webdriver.hub.firefox")),capabilities);
+            driver = new RemoteWebDriver(new URL(config.getProperty("webdriver.hub.firefox")), capabilities);
         }
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

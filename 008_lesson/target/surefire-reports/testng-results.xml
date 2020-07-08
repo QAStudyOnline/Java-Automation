@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CucumberFeatureTest" duration-ms="21434" started-at="2020-07-06T19:22:51 EEST" finished-at="2020-07-06T19:23:13 EEST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:online.qastudy.automationpractice.RunCucumberTest@39aeed2f]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="ChromeTest" duration-ms="21434" started-at="2020-07-06T19:22:51 EEST" finished-at="2020-07-06T19:23:13 EEST">
+      <class name="online.qastudy.automationpractice.RunCucumberTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:online.qastudy.automationpractice.RunCucumberTest@39aeed2f]" name="setUpClass" is-config="true" duration-ms="264" started-at="2020-07-06T19:22:51 EEST" finished-at="2020-07-06T19:22:52 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:online.qastudy.automationpractice.RunCucumberTest@39aeed2f]" name="runScenario" duration-ms="21013" started-at="2020-07-06T19:22:52 EEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-07-06T19:23:13 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register new customer and login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login into system"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:online.qastudy.automationpractice.RunCucumberTest@39aeed2f]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2020-07-06T19:23:13 EEST" finished-at="2020-07-06T19:23:13 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- online.qastudy.automationpractice.RunCucumberTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- CucumberFeatureTest -->
+</testng-results>

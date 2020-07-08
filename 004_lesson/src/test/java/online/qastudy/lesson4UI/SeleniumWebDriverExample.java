@@ -8,11 +8,11 @@ import java.util.concurrent.TimeUnit;
 
 public class SeleniumWebDriverExample {
 
-    public static final String SELENIUM = "https://www.seleniumhq.org/";
+    public static final String SELENIUM = "http://automationpractice.com/index.php?controller=search&orderby=position&orderway=desc&search_query=blues&submit_search=";
 
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", System.getenv("CHROMEDRIVER"));
+        System.setProperty("webdriver.chrome.driver", "C:\\TOOLS\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.MINUTES);

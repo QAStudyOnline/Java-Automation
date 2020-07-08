@@ -112,7 +112,11 @@ public class AccountBuilder {
     }
 
     public AccountBuilder withAliasAddress(String alias) {
-        this.alias = alias;
+        if (alias.isEmpty()) {
+            this.alias = "default value";
+        } else {
+            this.alias = alias;
+        }
         return this;
     }
 
