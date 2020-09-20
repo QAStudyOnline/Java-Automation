@@ -1,0 +1,18 @@
+version: "3.6"
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.compose
+    container_name: jdbc-mysql
+    ports:
+      - 3306:3306
+    environment:
+      - DATABASE_HOST=db
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=root
+      - DATABASE_NAME=restdemo
+      - DATABASE_PORT=3306
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=automation

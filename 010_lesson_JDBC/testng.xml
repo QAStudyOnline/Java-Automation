@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CrossBrowserTest" parallel="false" thread-count="1">
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="online.qastudy.automationpractice.ShopTest"/>
+            <class name="online.qastudy.automationpractice.RegistrationTest" />
+        </classes>
+    </test>
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="online.qastudy.automationpractice.RegistrationTest"/>
+        </classes>
+    </test>
+</suite>
