@@ -8,7 +8,9 @@
     <artifactId>automation-testing</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <modules>
         <module>001_lesson_Basic</module>
         <module>002_lesson_OOP</module>

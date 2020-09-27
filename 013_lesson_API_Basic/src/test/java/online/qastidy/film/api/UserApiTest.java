@@ -11,8 +11,7 @@ import online.qastudy.api.utils.Log;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
-import static online.qastudy.api.utils.Const.BASE_URL;
-import static online.qastudy.api.utils.Const.USER;
+import static online.qastudy.api.utils.Const.*;
 
 public class UserApiTest {
 
@@ -20,7 +19,7 @@ public class UserApiTest {
     @Test
     public void canAddUser() {
         User testUser = new User.UserBuilder()
-                .withId(1l)
+                .withId(99l)
                 .withUsername("i2i")
                 .withFirstName("Ivan")
                 .withLastName("Ivanov")
@@ -31,7 +30,7 @@ public class UserApiTest {
 
         RequestSpecification request = RestAssured.given();
 
-        Response response = request.baseUri(BASE_URL + USER).contentType(ContentType.JSON).body(testUser).when().post();
+        Response response = request.baseUri(BASE_URL + BASE_PATH + USER).contentType(ContentType.JSON).body(testUser).when().post();
 
         Log.LOG.info(response.prettyPrint());
 
@@ -53,14 +52,19 @@ public class UserApiTest {
 
         RequestSpecification request = RestAssured.given();
 
-        Response response = request.baseUri(BASE_URL + USER).contentType(ContentType.JSON).accept(ContentType.JSON)
+        Response response = request.baseUri(BASE_URL + BASE_PATH + USER)
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
                 .basePath(testUser.getUsername())
                 .when()
                 .get();
 
         Log.LOG.info(response.prettyPeek());
 
-        response.then().statusCode(200).and().contentType(ContentType.JSON);
+        response.then()
+                .statusCode(200)
+                .and()
+                .contentType(ContentType.JSON);
 
         Assertions.assertThat(response.getBody().as(User.class)).isEqualToComparingFieldByField(testUser);
     }

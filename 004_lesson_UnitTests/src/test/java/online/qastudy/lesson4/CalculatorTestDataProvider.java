@@ -1,5 +1,6 @@
 package online.qastudy.lesson4;
 
+import org.hamcrest.MatcherAssert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,6 +39,7 @@ public class CalculatorTestDataProvider {
     @Test
     public void canDivideTwoNumbers() {
         assertEquals(expected, calculate.divide(numberA, numberB));
+
     }
 
 

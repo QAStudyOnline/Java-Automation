@@ -68,6 +68,5 @@ public class RegistrationTest extends BaseTest {
                 .getAccountName()
                 .contains(account.getFirstCustomerName())
         );
-
     }
 }

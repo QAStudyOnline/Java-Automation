@@ -22,7 +22,7 @@ public class CalculatorTestTstNGDataProviderTest {
     public static Object[][] dataProviderDivide() {
         return new Object[][]{
                 {10, 2, 5},
-                {1, 1, 2},
+                {1, 1, 1},
                 {25, 3, 8}
         };
     }
