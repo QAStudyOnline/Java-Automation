@@ -123,7 +123,7 @@ public class RegistrationPage {
         WebElement element = driver.findElement(By.id("submitAccount"));
         element.click();
     }
-    @Step("Write data and submit a registartion form")
+    @Step("Write data and submit a registartion form {account.email}")
     public MyAccountPage fillAndSubmitRegistrationForm(Account account) {
         this.fillRegistrationForm(account);
         this.clickRegister();

@@ -66,6 +66,7 @@ public class MainPage {
         return this;
     }
 
+
     public MainPage clickDressesTab() {
         dressesTab.click();
         return this;

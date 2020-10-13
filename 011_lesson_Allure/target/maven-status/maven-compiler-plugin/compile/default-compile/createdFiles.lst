@@ -1,0 +1,11 @@
+online\qastudy\pages\SignInPage.class
+online\qastudy\pages\MainPage.class
+online\qastudy\pages\MyAccountPage.class
+online\qastudy\pages\attributes\CreateAccountAttribute.class
+online\qastudy\pages\RegistrationPage.class
+online\qastudy\dataprviders\RegistrationPageDtaProvider.class
+online\qastudy\model\Account.class
+online\qastudy\model\AccountBuilder.class
+online\qastudy\utils\Config.class
+online\qastudy\utils\TestHelper.class
+online\qastudy\pages\attributes\AlreadyRegistered.class

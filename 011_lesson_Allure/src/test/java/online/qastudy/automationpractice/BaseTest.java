@@ -16,6 +16,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -24,6 +25,21 @@ public abstract class BaseTest {
 
     public WebDriver driver;
     private final Properties config = Config.loadProperties("test.properties");
+
+
+    public static void main(String[] args) {
+        try {
+            System.out.println("I am a try!!!");
+            throw new IOException("I am a new Exception!!");
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            System.exit(0);
+        } finally {
+            System.out.println("I am a finally block!!!");
+        }
+
+
+    }
 
     @Parameters("browser")
     @BeforeMethod(alwaysRun = true)

@@ -1,0 +1,1 @@
+{"uuid":"b91fcea0-9579-49dc-ae4f-1065b0eb9067","name":"online.qastudy.automationpractice.RegistrationTest.setupAccount","description":"","start":1602183348614,"stop":1602183348615,"children":["396d156e-10a7-492d-968e-c6acc4f6ddd6"],"befores":[{"name":"setupAccount","status":"passed","stage":"finished","description":"","start":1602183348614,"stop":1602183348615}]}
