@@ -1,15 +1,24 @@
 package online.qastidy.film.api;
 
+import com.google.common.io.CharStreams;
 import online.qastudy.api.dto.User;
 import online.qastudy.api.dto.UserResponse;
+import org.apache.commons.codec.Charsets;
 import org.assertj.core.api.Assertions;
 import org.hamcrest.Condition;
 import org.hamcrest.CoreMatchers;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+
+import javax.net.ssl.HttpsURLConnection;
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 import static com.jayway.restassured.RestAssured.given;
 import static online.qastudy.api.utils.Const.*;
+
 
 public class PetStoreUserApiTest extends BaseApiTest {
     private static User user = null;
@@ -41,6 +50,8 @@ public class PetStoreUserApiTest extends BaseApiTest {
                 .body("code", CoreMatchers.equalTo(200))
                 .and()
                 .body("type", CoreMatchers.equalTo("unknown"))
+                .and()
+                .body("code", CoreMatchers.notNullValue())
                 .and()
                 .body("message", CoreMatchers.equalTo(user.getId().toString()));
     }

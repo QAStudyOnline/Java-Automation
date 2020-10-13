@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="132.657" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\bin"/>
+    <property name="java.vm.version" value="25.265-b01"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\yehor.maksymchuk\sources\ProgKyivUA\automation\007_lesson_TestNG_And_Prop"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\yehor.maksymchuk\sources\ProgKyivUA\automation\007_lesson_TestNG_And_Prop"/>
+    <property name="java.runtime.version" value="1.8.0_265-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\YEHOR~1.MAK\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\TOOLS\MAVEN\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\TOOLS\MAVEN\apache-maven-3.6.3\\bin;C:\TOOLS\GRADLE\gradle-6.6\bin;C:\TOOLS\DRIVERS\;C:\Program Files\nodejs\;C:\Users\yehor.maksymchuk\AppData\Local\Android\Sdk\tools;C:\Users\yehor.maksymchuk\AppData\Local\Android\Sdk\platform-tools;C:\Users\yehor.maksymchuk\AppData\Local\Android\Sdk\tools\bin;C:\Users\yehor.maksymchuk\AppData\Local\Microsoft\WindowsApps;C:\Users\yehor.maksymchuk\AppData\Local\GitHubDesktop\bin;C:\Users\yehor.maksymchuk\AppData\Roaming\npm;C:\Users\yehor.maksymchuk\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\yehor.maksymchuk\AppData\Local\Programs\Fiddler;."/>
+    <property name="maven.conf" value="C:\TOOLS\MAVEN\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\TOOLS\MAVEN\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\yehor.maksymchuk"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="yehor.maksymchuk"/>
+    <property name="java.class.path" value="C:\TOOLS\MAVEN\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_265"/>
+    <property name="java.ext.dirs" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\lib\resources.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\lib\rt.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\lib\sunrsasign.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\lib\jsse.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\lib\jce.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\lib\charsets.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\lib\jfr.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.265.01-hotspot\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.home" value="C:\TOOLS\MAVEN\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="canCheckTotlaPriceForTShirt" classname="online.qastudy.automationpractice.ShopTest" time="4.453"/>
+  <testcase name="canCreateNewAccount" classname="online.qastudy.automationpractice.RegistrationTest" time="10.142"/>
+  <testcase name="canCreateNewAccountChain" classname="online.qastudy.automationpractice.RegistrationTest" time="8.237"/>
+  <testcase name="canCreateNewAccountChain" classname="online.qastudy.automationpractice.RegistrationTest" time="9.6"/>
+  <testcase name="canCreateNewAccountChain" classname="online.qastudy.automationpractice.RegistrationTest" time="7.908"/>
+</testsuite>

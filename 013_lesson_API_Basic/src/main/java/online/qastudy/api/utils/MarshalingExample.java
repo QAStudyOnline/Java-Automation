@@ -14,7 +14,7 @@ public class MarshalingExample {
 
         String json = null;
         String jsonNiceLook = null;
-        String jsonPath = "/home/ymaks/sources/IdeaProjects/PROG_KIEV_UA/automation-testing/013_lesson/src/main/resources/user.json";
+        String jsonPath = "C:\\Users\\yehor.maksymchuk\\sources\\ProgKyivUA\\automation\\013_lesson_API_Basic\\src\\main\\resources\\user.json";
         ObjectMapper mapper = new ObjectMapper();
         User testUser1 = new User();
 
@@ -33,10 +33,10 @@ public class MarshalingExample {
 
 
         System.out.println(json);
-        Log.LOG.info(json);
+//        Log.LOG.info(json);
         System.out.println(testUser1.toString());
-        Log.LOG.info(testUser1.toString());
+//        Log.LOG.info(testUser1.toString());
         System.out.println(jsonNiceLook);
-        Log.LOG.info(jsonNiceLook);
+//        Log.LOG.info(jsonNiceLook);
     }
 }

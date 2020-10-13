@@ -1,6 +1,7 @@
 package online.qastudy.pages;
 
 import online.qastudy.model.Account;
+import online.qastudy.pages.enums.StateEnum;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,7 +34,7 @@ public class RegistrationPage {
 
     private void typeEmail(String email) {
         WebElement emailFiled = driver.findElement(By.id("email"));
-        if (emailFiled.getText().equals("")) {
+        if (emailFiled.getText().isEmpty()) {
             emailFiled.clear();
             emailFiled.sendKeys(email);
         }
@@ -52,8 +53,8 @@ public class RegistrationPage {
 
     private void selectBirthDay(String day) {
         WebElement dayDropDown = driver.findElement(By.id("days"));
-        Select value = new Select(dayDropDown);
-        value.selectByValue(day);
+        Select selectDays = new Select(dayDropDown);
+        selectDays.selectByValue(day);
     }
 
     private void selectBirthMonth(String month) {
@@ -92,10 +93,10 @@ public class RegistrationPage {
         driver.findElement(By.id("city")).sendKeys(city);
     }
 
-    private void selectState(String state) {
+    private void selectState(StateEnum state) {
         WebElement stateDropDown = driver.findElement(By.id("id_state"));
         Select value = new Select(stateDropDown);
-        value.selectByVisibleText(state);
+        value.selectByVisibleText(state.getName());
     }
 
     private void typePostCode(String postcode) {

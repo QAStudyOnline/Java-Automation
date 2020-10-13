@@ -1,5 +1,6 @@
 package online.qastudy.pages;
 
+import online.qastudy.utils.TestHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -61,7 +62,7 @@ public class MainPage {
     }
 
     public MainPage clickWomenTab() {
-        womenTab.click();
+        new TestHelper(driver).waitUntilElementWillBeClickable(womenTab).click();
         return this;
     }
 

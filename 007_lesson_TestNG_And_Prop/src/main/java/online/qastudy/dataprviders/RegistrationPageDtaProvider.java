@@ -1,6 +1,7 @@
 package online.qastudy.dataprviders;
 
 import online.qastudy.model.AccountBuilder;
+import online.qastudy.pages.enums.StateEnum;
 import org.testng.annotations.DataProvider;
 
 import static online.qastudy.utils.TestHelper.randomInt;
@@ -25,7 +26,7 @@ public class RegistrationPageDtaProvider {
                         .withAddress1("San Francisco 1")
                         .withAddress2("Moscow 2")
                         .withCity("London")
-                        .withState("Alabama")
+                        .withState(StateEnum.ALABAMA)
                         .withZipCode("02206")
                         .withCountry("United States")
                         .withPhoneMobile("+30995652333")
@@ -46,7 +47,7 @@ public class RegistrationPageDtaProvider {
                         .withAddress1("San Francisco 1")
                         .withAddress2("Moscow 2")
                         .withCity("London")
-                        .withState("Alabama")
+                        .withState(StateEnum.ALABAMA)
                         .withZipCode("02206")
                         .withCountry("United States")
                         .withPhoneMobile("+30995652333")
@@ -67,7 +68,7 @@ public class RegistrationPageDtaProvider {
                         .withAddress1("San Francisco 1")
                         .withAddress2("Moscow 2")
                         .withCity("London")
-                        .withState("Alabama")
+                        .withState(StateEnum.ALABAMA)
                         .withZipCode("02206")
                         .withCountry("United States")
                         .withPhoneMobile("+30995652333")

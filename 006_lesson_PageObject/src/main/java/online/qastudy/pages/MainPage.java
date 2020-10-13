@@ -46,7 +46,6 @@ public class MainPage {
     @FindBy(xpath = "//span[@id='total_price']")
     private WebElement totalSum;
 
-
     @FindBy(xpath = "//*[contains(@href,'controller=my-account')]")
     private WebElement singIn;
 
@@ -67,6 +66,7 @@ public class MainPage {
     }
 
     public MainPage clickDressesTab() {
+        TestHelper.waitUntilElementWillBeEnabled(dressesTab, 3,3000L);
         dressesTab.click();
         return this;
     }

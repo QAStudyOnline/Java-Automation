@@ -7,6 +7,7 @@ import online.qastudy.pages.MainPage;
 import online.qastudy.pages.MyAccountPage;
 import online.qastudy.pages.RegistrationPage;
 import online.qastudy.pages.SignInPage;
+import online.qastudy.pages.enums.StateEnum;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -41,7 +42,7 @@ public class RegistrationTest extends BaseTest {
                 .withAddress1("San Francisco 1")
                 .withAddress2("Moscow 2")
                 .withCity("London")
-                .withState("Alabama")
+                .withState(StateEnum.ALABAMA)
                 .withZipCode("02206")
                 .withCountry("United States")
                 .withPhoneMobile("+30995652333")

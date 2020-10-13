@@ -1,5 +1,7 @@
 package online.qastudy.model;
 
+import online.qastudy.pages.enums.StateEnum;
+
 public class AccountBuilder {
     private String gender;
     private String firstCustomerName;
@@ -15,7 +17,7 @@ public class AccountBuilder {
     private String address1;
     private String address2;
     private String city;
-    private String state;
+    private StateEnum state;
     private String postcode;
     private String country;
     private String phone_mobile;
@@ -91,7 +93,7 @@ public class AccountBuilder {
         return this;
     }
 
-    public AccountBuilder withState(String state) {
+    public AccountBuilder withState(StateEnum state) {
         this.state = state;
         return this;
     }

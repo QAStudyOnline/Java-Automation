@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CrossBrowserTest" duration-ms="131729" started-at="2020-09-29T21:17:53 EEST" finished-at="2020-09-29T21:20:04 EEST">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="29989" started-at="2020-09-29T21:17:53 EEST" finished-at="2020-09-29T21:18:23 EEST">
+      <class name="online.qastudy.automationpractice.ShopTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:online.qastudy.automationpractice.ShopTest@23ceabc1]" name="setup" is-config="true" duration-ms="16212" started-at="2020-09-29T21:17:53 EEST" finished-at="2020-09-29T21:18:09 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupMainPage()[pri:0, instance:online.qastudy.automationpractice.ShopTest@23ceabc1]" name="setupMainPage" is-config="true" duration-ms="60" started-at="2020-09-29T21:18:09 EEST" finished-at="2020-09-29T21:18:09 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMainPage -->
+        <test-method status="PASS" signature="canCheckTotlaPriceForTShirt()[pri:0, instance:online.qastudy.automationpractice.ShopTest@23ceabc1]" name="canCheckTotlaPriceForTShirt" duration-ms="4452" started-at="2020-09-29T21:18:09 EEST" finished-at="2020-09-29T21:18:13 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canCheckTotlaPriceForTShirt -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:online.qastudy.automationpractice.ShopTest@23ceabc1]" name="cleanup" is-config="true" duration-ms="9199" started-at="2020-09-29T21:18:13 EEST" finished-at="2020-09-29T21:18:23 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- online.qastudy.automationpractice.ShopTest -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="101710" started-at="2020-09-29T21:18:23 EEST" finished-at="2020-09-29T21:20:04 EEST">
+      <class name="online.qastudy.automationpractice.RegistrationTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="setup" is-config="true" duration-ms="13440" started-at="2020-09-29T21:18:23 EEST" finished-at="2020-09-29T21:18:36 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="setupAccount" is-config="true" duration-ms="7" started-at="2020-09-29T21:18:36 EEST" finished-at="2020-09-29T21:18:36 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAccount -->
+        <test-method status="PASS" signature="canCreateNewAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="canCreateNewAccount" duration-ms="10141" started-at="2020-09-29T21:18:36 EEST" finished-at="2020-09-29T21:18:46 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canCreateNewAccount -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="cleanup" is-config="true" duration-ms="6071" started-at="2020-09-29T21:18:46 EEST" finished-at="2020-09-29T21:18:52 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="setup" is-config="true" duration-ms="8951" started-at="2020-09-29T21:18:52 EEST" finished-at="2020-09-29T21:19:01 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="setupAccount" is-config="true" duration-ms="1" started-at="2020-09-29T21:19:01 EEST" finished-at="2020-09-29T21:19:01 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAccount -->
+        <test-method status="PASS" signature="canCreateNewAccountChain(online.qastudy.model.Account)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="canCreateNewAccountChain" duration-ms="8236" started-at="2020-09-29T21:19:01 EEST" data-provider="registerNewUser" finished-at="2020-09-29T21:19:09 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[online.qastudy.model.Account@21ac5eb4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canCreateNewAccountChain -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="cleanup" is-config="true" duration-ms="6036" started-at="2020-09-29T21:19:09 EEST" finished-at="2020-09-29T21:19:15 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="setup" is-config="true" duration-ms="9867" started-at="2020-09-29T21:19:15 EEST" finished-at="2020-09-29T21:19:25 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="setupAccount" is-config="true" duration-ms="1" started-at="2020-09-29T21:19:25 EEST" finished-at="2020-09-29T21:19:25 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAccount -->
+        <test-method status="PASS" signature="canCreateNewAccountChain(online.qastudy.model.Account)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="canCreateNewAccountChain" duration-ms="9601" started-at="2020-09-29T21:19:25 EEST" data-provider="registerNewUser" finished-at="2020-09-29T21:19:35 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[online.qastudy.model.Account@52d6cd34]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canCreateNewAccountChain -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="cleanup" is-config="true" duration-ms="6075" started-at="2020-09-29T21:19:35 EEST" finished-at="2020-09-29T21:19:41 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="setup" is-config="true" duration-ms="9202" started-at="2020-09-29T21:19:41 EEST" finished-at="2020-09-29T21:19:50 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupAccount()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="setupAccount" is-config="true" duration-ms="1" started-at="2020-09-29T21:19:50 EEST" finished-at="2020-09-29T21:19:50 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAccount -->
+        <test-method status="PASS" signature="canCreateNewAccountChain(online.qastudy.model.Account)[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="canCreateNewAccountChain" duration-ms="7907" started-at="2020-09-29T21:19:50 EEST" data-provider="registerNewUser" finished-at="2020-09-29T21:19:58 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[online.qastudy.model.Account@715d6168]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canCreateNewAccountChain -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:online.qastudy.automationpractice.RegistrationTest@39aeed2f]" name="cleanup" is-config="true" duration-ms="6160" started-at="2020-09-29T21:19:58 EEST" finished-at="2020-09-29T21:20:04 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- online.qastudy.automationpractice.RegistrationTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- CrossBrowserTest -->
+</testng-results>

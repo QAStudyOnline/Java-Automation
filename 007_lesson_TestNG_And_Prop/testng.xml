@@ -4,7 +4,7 @@
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="online.qastudy.automationpractice.ShopTest"/>
-            <class name="online.qastudy.automationpractice.RegistrationTest" />
+<!--            <class name="online.qastudy.automationpractice.RegistrationTest" />-->
         </classes>
     </test>
     <test name="FirefoxTest">

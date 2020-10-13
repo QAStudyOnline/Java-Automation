@@ -1,5 +1,7 @@
 package online.qastudy.model;
 
+import online.qastudy.pages.enums.StateEnum;
+
 public class Account {
     private String gender;
     private String firstCustomerName;
@@ -15,7 +17,7 @@ public class Account {
     private String address1;
     private String address2;
     private String city;
-    private String state;
+    private StateEnum state;
     private String postcode;
     private String country;
     private String phone_mobile;
@@ -26,7 +28,7 @@ public class Account {
 
     public Account(String gender, String firstCustomerName, String lastCustomerName, String pass, String email,
                    String day, String month, String year, String firstName, String lastName, String company,
-                   String address1, String address2, String city, String state, String postcode, String country,
+                   String address1, String address2, String city, StateEnum state, String postcode, String country,
                    String phone_mobile, String alias) {
         this.gender = gender;
         this.firstCustomerName = firstCustomerName;
@@ -105,7 +107,7 @@ public class Account {
         return city;
     }
 
-    public String getState() {
+    public StateEnum getState() {
         return state;
     }
 
@@ -181,7 +183,7 @@ public class Account {
         this.city = city;
     }
 
-    public void setState(String state) {
+    public void setState(StateEnum state) {
         this.state = state;
     }
 

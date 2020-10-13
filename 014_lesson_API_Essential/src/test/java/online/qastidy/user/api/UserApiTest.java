@@ -22,7 +22,8 @@ public class UserApiTest extends BaseApiTest {
                 .withEmail("testUser1@gmail.com")
                 .withPassword("TopSecretPassword")
                 .withPhone("+380694445522")
-                .withUserStatus(true).build();
+                .withUserStatus(true)
+                .build();
     }
 
     @Test
