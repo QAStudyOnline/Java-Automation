@@ -8,23 +8,25 @@
     <artifactId>automation-testing</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <modules>
-        <module>001_lesson</module>
-        <module>002_lesson</module>
-        <module>003_lesson</module>
-        <module>004_lesson</module>
-        <module>005_lesson</module>
-        <module>006_lesson</module>
-        <module>007_lesson</module>
-        <module>008_lesson</module>
-        <module>009_lesson</module>
-        <module>010_lesson</module>
-        <module>011_lesson</module>
-        <module>012_lesson</module>
-        <module>013_lesson</module>
-        <module>014_lesson</module>
-        <module>015_lesson</module>
+        <module>001_lesson_Basic</module>
+        <module>002_lesson_OOP</module>
+        <module>003_lesson_Collections</module>
+        <module>004_lesson_UnitTests</module>
+        <module>005_lesson_WebDriver_Basic</module>
+        <module>006_lesson_PageObject</module>
+        <module>007_lesson_TestNG_And_Prop</module>
+        <module>008_lesson_BDD_Cucumber</module>
+        <module>009_lesson_Selenium_Hub</module>
+        <module>010_lesson_JDBC</module>
+        <module>011_lesson_Allure</module>
+        <module>012_lesson_Jenkins</module>
+        <module>013_lesson_API_Basic</module>
+        <module>014_lesson_API_Essential</module>
+        <module>015_lesson_Appium</module>
     </modules>
     <build>
         <plugins>
