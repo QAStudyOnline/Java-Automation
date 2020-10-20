@@ -34,11 +34,11 @@ public abstract class BaseTest {
         if (browser.toLowerCase().equals("chrome")) {
             WebDriverManager.chromedriver().version(config.getProperty("chrome.version")).setup();
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-            driver = new RemoteWebDriver(new URL(config.getProperty("webdriver.hub.chrome")),capabilities);
+            driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"),capabilities);
         } else if (browser.toLowerCase().equals("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-            driver = new RemoteWebDriver(new URL(config.getProperty("webdriver.hub.firefox")),capabilities);
+            driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"),capabilities);
         }
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
