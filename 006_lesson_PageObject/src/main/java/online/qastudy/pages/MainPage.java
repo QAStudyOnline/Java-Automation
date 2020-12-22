@@ -86,8 +86,9 @@ public class MainPage {
         return this;
     }
 
-    public void clickAddToCart(){
+    public MainPage clickAddToCart(){
         addCartButton.click();
+        return this;
     }
 
     public void navigateToItemView () {
@@ -95,9 +96,10 @@ public class MainPage {
         actions.moveToElement(itemView).build().perform();
     }
 
-    public void scrollToItem(){
+    public MainPage scrollToItem(){
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].scrollIntoView(true);", itemView);
+        return this;
     }
 
     public void clickProceedToCheckout() {
@@ -108,5 +110,20 @@ public class MainPage {
 
     public String getTotalPrice(){
         return totalSum.getText();
+    }
+
+    public boolean isPageLoaded(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        return js.executeScript("return document.readyState").equals("complete");
+    }
+
+    public void removeElementFromDom(WebElement elementToBeDeleted){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].remove();", elementToBeDeleted);
+    }
+
+    public void hideElement(WebElement var){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].setAttribute('hidden','true');", var);
     }
 }
