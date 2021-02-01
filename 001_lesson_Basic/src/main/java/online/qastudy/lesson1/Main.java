@@ -1,27 +1,66 @@
 package online.qastudy.lesson1;
-
 import java.util.Random;
+import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
-        LessonOneTutor automationTutor = new LessonOneTutor("Yehor");
-        LessonOneStudent studentFirst = new LessonOneStudent("Olga");
-        LessonOneStudent studentSecond = new LessonOneStudent("Oleg");
 
-        LessonOneGroup automationJava =
-                new LessonOneGroup(
-                        "Java Automation",
-                        automationTutor,
-                        new LessonOneStudent[]{studentFirst, studentSecond}
-                        );
+    public static void print(String forPrint) {
+        System.out.println(forPrint);
+    }
 
-        for (int i = 0; i < automationJava.getStudents().length; i++) {
-            System.out.println(automationJava.getStudents()[i].getStudentName());
+    public static void print(int forPrint) {
+        System.out.println(forPrint);
+    }
+
+    public static void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (i == 0) {
+                System.out.print("[ ");
+            }
+            System.out.print(array[i]);
+            if (i != array.length - 1) {
+                System.out.print(", ");
+            }
+            if (i == array.length - 1) {
+                System.out.print(" ]");
+            }
         }
+        System.out.print("\n");
+    }
 
-        new Random().nextInt();
-        automationJava.getStudents()[0].askQuestion("What is Java?");
-        automationJava.getTutor().writeAnswer("What is Java?");
-        automationJava.getStudents()[0].readAnswer();
+    public static int[] getRandomArray(int length) {
+        int[] array = new int[length];
+        Random random = new Random(0);
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(9);
+        }
+        printArray(array);
+        return array;
+    }
+
+    public static int countEvenItems(int[] array) {
+        int countItems = 0;
+        for(int i = 0; i < array.length; i++) {
+            boolean isEven = array[i] % 2 == 0;
+            if (isEven) {
+                countItems++;
+            }
+        }
+        print(countItems);
+        return countItems;
+    }
+
+    public static void sortArray(int[] array) {
+        Arrays.sort(array);
+        printArray(array);
+    }
+
+
+    public static void main(String[] args) {
+        print("Homework 1");
+        int[] randomArr = getRandomArray(5);
+        countEvenItems(randomArr);
+        sortArray(randomArr);
     }
 }
