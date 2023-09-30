@@ -30,8 +30,8 @@ public abstract class BaseTest {
         if (browser.toLowerCase().equals("chrome")) {
             WebDriverManager
                     .chromedriver()
-                    .version(config.getProperty("chromedriver.version"))
-                    .setup();
+                    .version(System.setProperty("webdriver.chrome.driver", "C:\\TOOLS\\DRIVERS\\chromedriver.exe"));
+            //.setup();
             driver = new ChromeDriver();
         } else if (browser.toLowerCase().equals("firefox")) {
             WebDriverManager.firefoxdriver().setup();
