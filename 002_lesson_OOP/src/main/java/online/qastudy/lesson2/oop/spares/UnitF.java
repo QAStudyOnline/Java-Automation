@@ -1,5 +1,9 @@
 package online.qastudy.lesson2.oop.spares;
 
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
+
 public class UnitF {
     private String accountNumber;
     private int balance;
@@ -11,6 +15,10 @@ public class UnitF {
 
     public void setBalance(int balance) {
         this.balance = balance;
+    }
+   //Добавил метод для получения баланса
+    int getBalance() {
+        return balance;
     }
 
     public void credit(int amount) {

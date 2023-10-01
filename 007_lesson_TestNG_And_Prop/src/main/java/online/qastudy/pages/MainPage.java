@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class MainPage {
     private WebDriver driver;
 
-    private final static String TITLE_PROCEED_TO_CHECKOUT = "//*[@id=\"cartModal\"]//div[2]/p[2]/a/u";
+    private final static String TITLE_PROCEED_TO_CHECKOUT = "//*[@title='Proceed to checkout']";
 
     @FindBy(css = "#block_top_menu > ul > li:nth-child(1) > a")
     private WebElement womenTab;
@@ -22,7 +22,7 @@ public class MainPage {
     @FindBy(css = "#block_top_menu > ul > li.sfHoverForce > a")
     private WebElement dressesTab;
 
-    @FindBy(xpath = "/html/body/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div[2]/ul/li/a/i")
+    @FindBy(css = "#block_top_menu > ul > li:nth-child(3) > a")
     private WebElement tShirtTab;
 
     @FindBy(id = "search_query_top")
@@ -37,13 +37,13 @@ public class MainPage {
     @FindBy(className = "icon-th-list")
     private WebElement listView;
 
-    @FindBy(xpath = "//button[@class='btn btn-default cart']")
+    @FindBy(xpath = "//span[text()='Add to cart']")
     private WebElement addCartButton;
 
     @FindBy(xpath = TITLE_PROCEED_TO_CHECKOUT)
     private WebElement proceedCheckout;
 
-    @FindBy(xpath = "//section/div/div/div[2]/div[2]/div[2]/div/span/span")
+    @FindBy(xpath = "//span[@id='total_price']")
     private WebElement totalSum;
 
 
@@ -71,8 +71,9 @@ public class MainPage {
         return this;
     }
 
-    public void clickTShirtTab() {
+    public MainPage clickTShirtTab() {
         tShirtTab.click();
+        return this;
     }
 
     public SignInPage clickSignIn(){
